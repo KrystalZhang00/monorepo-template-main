@@ -1,8 +1,20 @@
 class Logger:
     _instance = None  # Private class variable to hold the single instance
+    _initialized = False
 
-    def __init__(self):
-        self.messages = []
+    def __new__(cls):
+        if cls._instance is None:
+            cls._instance = super(Logger, cls).__new__(cls)
+            cls._instance.messages = []
+            cls._initialized = True
+            print("Logger created exactly once")
+        elif not cls._initialized:
+            cls._instance.messages = []
+            cls._initialized = True
+            print("Logger created exactly once")
+        else:
+            print("Logger already created")
+        return cls._instance
 
     def add_message(self, message):
         self.messages.append(message)
