@@ -6,31 +6,36 @@
 
 <hr>
 
-**Use Case**: *use-case-title*
+**Use Case**: *Selecting Drawing Color*
 
-**Primary Actor**: *primary-actor*
+**Primary Actor**: *User*
 
-**Goal in Context**: *the aim of the primary-actor in a particular circumstance*
+**Goal in Context**: *The primary actor aims to select a specific drawing color to use while creating artwork in the mini-paint program.*
 
-**Preconditions**: *conditions that must be true before the scenario may play out*
+**Preconditions**: *The mini-paint program is running, and the user is actively working on a canvas.*
 
-**Trigger**: *an action or actions that initiate the scenario*
+**Trigger**: *User selects the option to change the drawing color.*
   
-**Scenario**: *an enumerated list of steps describing the actions and interactions of the primary actor with the system*
+**Scenario**: *1. User is working on the canvas within the mini-paint program.
+2. User clicks on a "Change Color" button or selects a color palette option.
+3. The system presents a color selection interface, such as a color wheel or a list of predefined colors.
+4. User selects the desired drawing color.
+5. The system updates the drawing tool to use the selected color.*
  
-**Exceptions**: *errors or faults that may occur during the scenario. Should include remedy/corrective action taken by the primary actor*
+**Exceptions**: *1. If the user encounters an issue while selecting a color (e.g., color selection interface malfunction), they can cancel the action and retry.
+2. System errors in color handling should display an error message with possible corrective actions.*
 
-**Priority**: *relative importance of this use case compared to other use cases*
+**Priority**: *Medium-priority.*
 
-**When available**: *the targeted release that covers this use case*
+**When available**: *First release*
 
-**Channel to actor**: *the means through which the primary actor and the system communicate*
+**Channel to actor**: *The primary actor (user) interacts with the system through the program's GUI, specifically the color selection interface.*
 
-**Secondary Actor**: *any other actors – people or systems – that may be involved in the scenario*
+**Secondary Actor**: *N/A*
 
-**Channels to Secondary Actors**: *the means through which any secondary actors may interact with the system or other actors*
+**Channels to Secondary Actors**: *N/A*
 
-**Open Issues**: *notes, concerns, or other materials*
+**Open Issues**: *Ensure the color selection interface is user-friendly and intuitive for ease of use by various users.*
 
 <hr>
 

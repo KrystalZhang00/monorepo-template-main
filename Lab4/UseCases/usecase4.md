@@ -6,31 +6,36 @@
 
 <hr>
 
-**Use Case**: *use-case-title*
+**Use Case**: *Undoing Drawing Actions*
 
-**Primary Actor**: *primary-actor*
+**Primary Actor**: *User*
 
-**Goal in Context**: *the aim of the primary-actor in a particular circumstance*
+**Goal in Context**: *The primary actor aims to undo their recent drawing actions on the canvas within the mini-paint program.*
 
-**Preconditions**: *conditions that must be true before the scenario may play out*
+**Preconditions**: * The mini-paint program is running, and the user is actively working on a canvas.*
 
-**Trigger**: *an action or actions that initiate the scenario*
+**Trigger**: *User selects the "Undo" option.*
   
-**Scenario**: *an enumerated list of steps describing the actions and interactions of the primary actor with the system*
+**Scenario**: *1. User is working on the canvas and realizes they made an undesired drawing action.
+2. User accesses the program's menu or toolbar and selects the "Undo" option.
+3. The system identifies the most recent drawing action to undo (e.g., the last stroke or change).
+4. The system reverts the canvas to the state before the selected drawing action was performed.
+5. User continues working on the canvas.*
  
-**Exceptions**: *errors or faults that may occur during the scenario. Should include remedy/corrective action taken by the primary actor*
+**Exceptions**: *1. If the "Undo" action is not available (e.g., no recent actions to undo), the system should disable the option, and the user should continue without undoing.
+2. System errors during the undo process should display an error message, and the user should attempt the action again.*
 
-**Priority**: *relative importance of this use case compared to other use cases*
+**Priority**: *High-priority.*
 
-**When available**: *the targeted release that covers this use case*
+**When available**: *First release*
 
-**Channel to actor**: *the means through which the primary actor and the system communicate*
+**Channel to actor**: *The primary actor (user) interacts with the system through the program's GUI, specifically by selecting the "Undo" option from the menu or toolbar.*
 
-**Secondary Actor**: *any other actors – people or systems – that may be involved in the scenario*
+**Secondary Actor**: *N/A*
 
-**Channels to Secondary Actors**: *the means through which any secondary actors may interact with the system or other actors*
+**Channels to Secondary Actors**: *N/A*
 
-**Open Issues**: *notes, concerns, or other materials*
+**Open Issues**: *Ensure the "Undo" functionality is responsive and can handle multiple levels of undo if needed for more complex drawings.*
 
 <hr>
 

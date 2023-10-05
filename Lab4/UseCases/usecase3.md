@@ -6,31 +6,36 @@
 
 <hr>
 
-**Use Case**: *use-case-title*
+**Use Case**: * Drawing on Canvas*
 
-**Primary Actor**: *primary-actor*
+**Primary Actor**: *User*
 
-**Goal in Context**: *the aim of the primary-actor in a particular circumstance*
+**Goal in Context**: *The primary actor aims to create artwork on the canvas within the mini-paint program.*
 
-**Preconditions**: *conditions that must be true before the scenario may play out*
+**Preconditions**: *The mini-paint program is running, and the user is actively working on a canvas.*
 
-**Trigger**: *an action or actions that initiate the scenario*
+**Trigger**: *User selects a drawing tool (e.g., pencil, brush) and starts drawing.*
   
-**Scenario**: *an enumerated list of steps describing the actions and interactions of the primary actor with the system*
+**Scenario**: *1. User launches the mini-paint program and opens a canvas.
+2. User selects a drawing tool (e.g., pencil, brush) from the toolbox.
+3. User positions the cursor on the canvas where they want to start drawing.
+4. User clicks and holds the mouse button to draw.
+5. The system records the user's mouse movements and updates the canvas in real-time.
+6. User releases the mouse button to stop drawing.*
  
-**Exceptions**: *errors or faults that may occur during the scenario. Should include remedy/corrective action taken by the primary actor*
+**Exceptions**: *If there is a sudden system error or crash during the drawing process, the user should attempt to save their work if possible. They can also restart the program and recover their work if an auto-save feature is available.*
 
-**Priority**: *relative importance of this use case compared to other use cases*
+**Priority**: *High-priority.*
 
-**When available**: *the targeted release that covers this use case*
+**When available**: *First release*
 
-**Channel to actor**: *the means through which the primary actor and the system communicate*
+**Channel to actor**: *The primary actor (user) interacts with the system through the program's GUI using a pointing device (e.g., mouse) to draw on the canvas.*
 
-**Secondary Actor**: *any other actors – people or systems – that may be involved in the scenario*
+**Secondary Actor**: *N/A*
 
-**Channels to Secondary Actors**: *the means through which any secondary actors may interact with the system or other actors*
+**Channels to Secondary Actors**: *N/A*
 
-**Open Issues**: *notes, concerns, or other materials*
+**Open Issues**: *Ensure efficient rendering of drawings on the canvas, and consider implementing auto-save functionality to prevent data loss in case of unexpected errors.*
 
 <hr>
 
